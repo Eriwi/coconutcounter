@@ -1,11 +1,16 @@
 from flask import render_template, redirect
 from server import app, db
 from server.forms import DataForm
-from server.models import Data
+from server.models import Data, Count
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    number = Count.query.get('count')
+    if (number):
+        count=number.count
+    else:
+        count=0
+    return render_template('index.html', count=count)
 
 
 @app.route('/test')

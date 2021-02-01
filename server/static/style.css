@@ -1,0 +1,18 @@
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+
+body {
+  background-color: green;
+}
+
+.paragraph1{
+  color: orange;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.header1 {
+  color:pink;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
